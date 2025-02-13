@@ -29,8 +29,8 @@ def main():
     pages = olostep.get_pages(crawl_id=crawl_id, formats=["markdown"])
     print(f"Found {len(pages)} pages to process")
 
-    # Save all markdown content to a single file
-    output_file = "doc_markdown.md"
+    # Save all markdown content to a single txt file
+    output_file = "doc_markdown.txt"
     
     with open(output_file, "w", encoding="utf-8") as f:
         for page in pages:
